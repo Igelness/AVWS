@@ -1,0 +1,24 @@
+{
+  "name": "antonvorobyov/AVWS",
+  "description": "A bunch of useful web snippets to create forms, inputs, cookies, sessions more OOP stylish",
+  "keywords": ["web", "snippets", "form", "cookie", "session"],
+  "homepage": "https://github.com/Igelness/AVWS",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anton Vorobyov",
+      "email": "a.a.vorobyev0@gmail.com"
+    }
+  ],
+  "support": {
+    "email": "a.a.vorobyev0@gmail.com"
+  },
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AVWS\\": "src/"
+    }
+  }
+}
