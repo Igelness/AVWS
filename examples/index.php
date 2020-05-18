@@ -13,8 +13,13 @@ foreach ($_POST as $name => $item) {
   setcookie(strtoupper($name), trim($item), time() + 3600 );
 }
 
-$test = new AVWS\Cookie();
-$test->setCookie('TEST', 'TESTTTT');
-$test->deleteCookie('TEST');
+/* COOKIE */
+
+$cookie = new AVWS\Cookie();
+$cookie->setCookie('TEST', 'TESTTTT');
+$cookie->deleteCookie('TEST');
+
+
+
 
 
