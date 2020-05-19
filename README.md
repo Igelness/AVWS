@@ -3,7 +3,7 @@ A bunch of useful web snippets to create forms, inputs, cookies, sessions more o
 ## Install
 Via Composer
 ``` bash
-$ composer require antonvorobyov/AVWS
+$ composer require antonvorobyov/avws
 ```
 ## Usage
 ``` php
