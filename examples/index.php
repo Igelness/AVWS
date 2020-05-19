@@ -3,6 +3,7 @@
 require_once('../src/Cookie.php');
 require_once ('../src/Flash.php');
 
+
 if(!isset($_POST['submit'])) {
   header('Location: /using.php');
 } else {

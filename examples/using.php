@@ -3,6 +3,8 @@
 require_once("../src/Form/SmartForm.php");
 require_once ("../src/Session.php");
 require_once ("../src/Flash.php");
+require_once ('../src/Db.php');
+require_once ('../src/Log.php');
 
 /* Session + Flash */
 
@@ -31,9 +33,8 @@ echo $form->submit(['value'=>'Отправить', 'name'=>'submit']);
 echo $form->close();
 
 /* DB */
-require_once ('../src/Db.php');
 
-$db = new AVWS\Db('localhost', 'forum','root', 'password', 'utf8');
+/*$db = new AVWS\Db('localhost', 'forum','root', 'password', 'utf8');
 
 $data = $db->getTableData('news_contents');
 
@@ -46,6 +47,17 @@ foreach ($data as $item) {
 
 $count = $db->countTableData('news_contents');
 $values = [8, '\'test\'', 8];
-$db->addTableData('news_contents', $values);
+$db->addTableData('news_contents', $values);*/
+
+$log = new AVWS\Log('localhost', 'logging','root', 'password', 'utf8');
+$log->insertLogTableData('my_log', '\'testtest\'');
+$data = $log->getLogTableData('my_log');
+foreach ($data as $item) {
+  echo $item['message'] . "<br>";
+  echo $item['log_date'] . "<br>";
+}
+$log->deleteLogTableData('my_log');
+
+
 
 
