@@ -1,4 +1,4 @@
-# AV Web Snippets
+# Web Snippets
 A bunch of useful web snippets to create forms, inputs, cookies, sessions more object-oriented
 ## Install
 Via Composer
