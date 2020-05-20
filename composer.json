@@ -1,6 +1,6 @@
 {
   "name": "antonvorobyov/avws",
-  "description": "A bunch of useful web snippets to create forms, inputs, cookies, sessions more OOP stylish",
+  "description": "A bunch of useful web snippets to create forms, inputs, cookies, sessions more object oriented",
   "keywords": ["web", "snippets", "form", "cookie", "session"],
   "homepage": "https://github.com/Igelness/AVWS",
   "license": "MIT",
