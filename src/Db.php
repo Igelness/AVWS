@@ -53,7 +53,7 @@ class Db {
   }
 
   /**
-   * String values need to be interpolated
+   * If values array contains string mysql type it needs to be interpolated
    * Example: '\'test\''
    *
    * @param string $table
@@ -62,7 +62,7 @@ class Db {
   public function addTableData(string $table, array $values) {
     $sql = "INSERT INTO {$table} VALUES(";
     foreach ($values as $k => $value) {
-      if($values[count($values) -1] === $value) {
+      if($values[count($values) - 1] === $value) {
         if($k === count($values) - 1) {
           $sql = $sql . $value;
         } else {
