@@ -73,7 +73,6 @@ class Db {
       }
     }
     $sql = $sql . ")";
-    echo "<br><br><br> {$sql} <br><br><br>";
     $this->db->query($sql);
   }
 
